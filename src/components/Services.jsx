@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react"; 
-import "./services.css";
+import "./Services.css";
 import serviceImg from "../assets/images/service.jpg";
 
 // Service images
