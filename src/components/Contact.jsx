@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.css";
+import "./Contact.css";
 import igniteImg from "../assets/images/ignite.png";
 
 const Contact = () => {
