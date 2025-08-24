@@ -1,0 +1,204 @@
+.services-container {
+  background: #cecbcb; 
+  min-height: 100vh; 
+  width: 100%; 
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.services-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.services-top-image img {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 350px;  
+  border-radius: 12px;
+  margin: 0 auto 40px;
+  display: block;
+  object-fit: cover;  
+}
+
+/* Slider Layout */
+.services-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* Grid inside slider */
+.services-grid {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  min-width: 280px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon container */
+.service-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; 
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #313131;
+  line-height: 1.5;
+}
+
+/* Slider Buttons */
+.slider-btn {
+  background: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  border-radius: 50%;
+  width: 60px;
+  height: 62px;
+  cursor: pointer;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  line-height: 0;
+}
+
+.slider-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+/* Book Now Button */
+.book-now-container {
+  margin-top: 20px;
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.explore-btn:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* Responsive for Tablets & Small Desktops */
+@media (max-width: 1024px) {
+  .services-grid {
+    gap: 15px;
+  }
+
+  .service-card {
+    min-width: 250px;
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-wrap: nowrap; /* horizontal slider */
+    overflow-x: auto;
+    gap: 15px;
+    -webkit-overflow-scrolling: touch; /* smooth scroll */
+  }
+
+  .service-card {
+    min-width: 260px;
+    flex-shrink: 0; /* prevent shrinking */
+  }
+
+  .services-top-image img {
+    max-width: 100%;
+  }
+
+  .slider-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .service-card {
+    min-width: 220px;
+  }
+
+  .slider-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .explore-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
